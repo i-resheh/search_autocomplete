@@ -276,8 +276,9 @@ class _SearchAutocompleteState<T> extends State<SearchAutocomplete<T>>
               getString: widget.getString,
             );
 
-        return ConstrainedBox(
-          constraints: const BoxConstraints(maxHeight: 200),
+        return SizedBox(
+          width: MediaQuery.sizeOf(context).width,
+          height: MediaQuery.sizeOf(context).height,
           child: child,
         );
       },

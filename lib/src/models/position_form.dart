@@ -66,8 +66,8 @@ class PositionForm {
   Widget wrapAreaUnder({Widget child = const SizedBox.shrink()}) {
     return Positioned(
       top: bottomLeft.dy,
-      left: bottomLeft.dx,
-      right: bottomRight.dx - size.width,
+      left: 0,
+      right: 0,
       child: child,
     );
   }
